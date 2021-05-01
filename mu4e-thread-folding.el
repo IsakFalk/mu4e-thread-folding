@@ -80,7 +80,7 @@
        :overline nil ;; ,(color-darken nano-color-background 10)
        :underline nil
        :foreground nil
-       :background nil ;;,(color-darken nano-color-background 0)))
+       :background nil)) ;;,(color-darken nano-color-background 0)))
   "Face for the root node thread when it is unfolded."
   :group 'mu4e-thread-folding)
 
@@ -98,7 +98,7 @@
        :overline nil
        :underline nil
        :foreground nil
-       :background nil ;;,(color-darken nano-color-background 0)))
+       :background nil)) ;;,(color-darken nano-color-background 0)))
   "Face for a thread when it is unfolded (child node)"
   :group 'mu4e-thread-folding)
 
