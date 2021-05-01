@@ -68,7 +68,8 @@
                (`(,R ,G ,B) (color-hsl-to-rgb H S L)))
     (color-rgb-to-hex R G B 2)))
 
-(color-darken nano-color-background 5)
+;; Fix bug
+;;(color-darken nano-color-background 5)
 
 (defgroup mu4e-thread-folding '()
   "Group for mu4e thread folding options"
@@ -79,7 +80,7 @@
        :overline nil ;; ,(color-darken nano-color-background 10)
        :underline nil
        :foreground nil
-       :background ,(color-darken nano-color-background 0)))
+       :background nil ;;,(color-darken nano-color-background 0)))
   "Face for the root node thread when it is unfolded."
   :group 'mu4e-thread-folding)
 
@@ -97,7 +98,7 @@
        :overline nil
        :underline nil
        :foreground nil
-       :background ,(color-darken nano-color-background 0)))
+       :background nil ;;,(color-darken nano-color-background 0)))
   "Face for a thread when it is unfolded (child node)"
   :group 'mu4e-thread-folding)
 
